@@ -11,7 +11,7 @@ N=int(input('Base de conversion:'))
 chiffressup=['A','B','C','D','E','F']
 P=[]
 
-
+# fonction convertisseuse
 
 def convert(n):
     L=int(log(n)/log(N))
@@ -28,6 +28,8 @@ def convert(n):
         if int(rpartiel[i])>=10:
             rpartiel[i]=chr(int(rpartiel[i])+87)
     return rpartiel
+
+# Division du programme si la nouvelle base est inférieur à 11 ...
     
 if C<11:
     X=str(n)
@@ -48,6 +50,8 @@ if C<11:
     else:
         print( "Votre nombre en base",N," est :", "".join(convert(sum(resultat))))
 
+# ... si la nouvelle base est suppérieur ou égal à 11
+        
 elif 11<C<16 :
     resultat=[]
     taille_n=str(n)
