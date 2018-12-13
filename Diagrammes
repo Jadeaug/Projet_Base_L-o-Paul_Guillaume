@@ -1,6 +1,6 @@
 Diagramme d'utilisation :
  
-    Nombre à coder
+    Nombre à coder (dans une base <=10)
           !
           !
           !
@@ -28,8 +28,8 @@ Diagramme d'utilisation :
 
 Diagramme d'activité :
 
- Nombre à coder ----------(Dmander l'ancienne base)--------> Ancienne base
-                                                                  !
+ Nombre à coder ---------(Dmander l'ancienne base)--------> Ancienne base
+ (dans une base <=10)                                             !
                                                                   !
                                                                   !
                                                                   (Transformé en quel base)
