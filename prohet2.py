@@ -8,7 +8,7 @@ n=int(input('Nombre à convertir:'))
 C=int(input("Base d'écriture:"))
 N=int(input('Base de conversion:'))
 
-chiffressup=['A','B','C','D','E','F']
+chiffressup=['a','b','c','d','e','f']
 P=[]
 
 # fonction convertisseuse
