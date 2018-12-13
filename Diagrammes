@@ -20,3 +20,33 @@ Diagramme d'utilisation :
           !                                !
           v                                !
           Nouveau nombre <-----------------!
+
+
+
+
+
+
+Diagramme d'activité :
+
+ Nombre à coder ----------(Dmander l'ancienne base)--------> Ancienne base
+                                                                  !
+                                                                  !
+                                                                  !
+                                                                  (Transformé en quel base)
+                                                                  !
+                                                                  !
+                                                                  v
+                                                                  Nouvelle base (N)
+                                                                  !
+                                                                  !
+                                                                  !
+                                                                  v
+     Nouveau nombre <------- Transformation------(N<=10)________ /\
+            ^                   (une fonction)                   \/ 
+            !                                                     !
+            !                                                     !
+            !                                                     !
+            !                                                  (NB>10)
+            !                                                     !
+            !-------------------- Transformation <----------------!
+                                  (une fonction)                              
