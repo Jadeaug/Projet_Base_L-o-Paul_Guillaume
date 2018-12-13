@@ -1,0 +1,22 @@
+Diagramme d'utilisation :
+ 
+    Nombre à coder
+          !
+          !
+          !
+          v
+    Ancienne Base
+          !
+          !
+          !                (N>10,
+          v            une fonction)
+    Nouvelle Base (N) --------------> Transformation 
+          !                                !
+          !     (N<=10,                    !
+          !  une fonction )                !
+          v                                !
+   Transformation                          !
+          !                                !
+          !                                !
+          v                                !
+          Nouveau nombre <-----------------!
