@@ -8,12 +8,13 @@ n=int(input('Nombre à convertir:'))
 C=int(input("Base d'écriture:"))
 N=int(input('Base de conversion:'))
 
-chiffressup=['a','b','c','d','e','f']
+chiffressup=['a','b','c','d','e','f','g','h','i','j','k','l','m','n','o','p','q','r','s','t','u','v','w','x','y','z']
 P=[]
 
 # fonction convertisseuse
 
-def convert(n):
+
+def convertion(n):
     L=int(log(n)/log(N))
     s=int(n/(N**L))
     A=n
@@ -30,8 +31,10 @@ def convert(n):
     return rpartiel
 
 # Division du programme si la nouvelle base est inférieur à 11 ...
-    
-if C<11:
+
+if C==1:
+    print ("Error 404")
+elif C<11:
     X=str(n)
     nbdepart=[]
     l=len(X)
@@ -48,11 +51,11 @@ if C<11:
     if max(nbdepart)>=C:
         print( "Votre nombre n'est pas en base ",C,'.')
     else:
-        print( "Votre nombre en base",N," est :", "".join(convert(sum(resultat))))
+        print( "Votre nombre en base",N," est :", "".join(convertion(sum(resultat))))
 
 # ... si la nouvelle base est suppérieur ou égal à 11
         
-elif 11<C<16 :
+else  :
     resultat=[]
     taille_n=str(n)
     for i in range(0,len(taille_n)):
@@ -69,6 +72,6 @@ elif 11<C<16 :
         l-=1
         a+=1
     else :
-        print( "Votre nombre en base",N," est :", "".join(convert(sum(resultat))))
+        print( "Votre nombre en base",N," est :", "".join(convertion(sum(resultat))))
 
 
